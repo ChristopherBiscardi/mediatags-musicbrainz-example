@@ -1,0 +1,21 @@
+Status
+========
+
+Sends Request to musicbrainz database for artist Jaco Pastorius
+Gets back 400 code (Bad Request)
+
+
+
+TODO
+==========
+* Get data from mediatags(music file)
+* Use data from file for request
+* Fix request from 400 to 200
+* Error handling for different codes(200, 400, 401, 404)
+* Parse xml response
+
+
+Why Musicbrainz?
+=========
+Seems to be most complete option
+
