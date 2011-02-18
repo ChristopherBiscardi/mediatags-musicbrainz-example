@@ -2,7 +2,7 @@ Status
 ========
 
 Sends Request to musicbrainz database for artist Jaco Pastorius
-Gets back 400 code (Bad Request)
+Gets back 200 (Resource retrieved successfully_
 
 
 
@@ -10,12 +10,13 @@ TODO
 ==========
 * Get data from mediatags(music file)
 * Use data from file for request
-* Fix request from 400 to 200
 * Error handling for different codes(200, 400, 401, 404)
 * Parse xml response
 
 
-Why Musicbrainz?
+Musicbrainz
 =========
-Seems to be most complete option
-
+base url is musicbrainz.org/ws/1/
+then add what you're looking for musicbrainz.org/ws/1/artist
+type=xml is necessary musicbrainz.org/ws/1/artist/?type=xml
+add artist name musicbrainz.org/ws/1/artist/?type=xml&name=jaco+pastorius

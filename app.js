@@ -5,7 +5,7 @@
 
 var express = require('express');
 var http = require('http');
-var querystring = require('querystring');
+//var querystring = require('querystring');
 var app = module.exports = express.createServer();
 
 // Configuration
@@ -28,10 +28,11 @@ app.configure('production', function(){
 });
 
 function getArtist(artistName){
+thePath = '/ws/1/artist/?type=xml&name=jaco+pastorius';// . QueryString.stringify(artistName);
 var options = {
   host: 'www.musicbrainz.org',
   port: 80,
-  path: '/ws/1/artist/?type=xml&name='+querystring.stringify(artistName)
+  path: thePath
 };
 
 console.log(options);
