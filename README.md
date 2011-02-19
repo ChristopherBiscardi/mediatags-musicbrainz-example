@@ -5,7 +5,7 @@ Making more than 1 request/second to the Musicbrainz web service will ban your i
 Status
 ========
 
-Sends Request to musicbrainz database for artist Jaco Pastorius
+Sends Request to musicbrainz database for artist Jaco Pastorius  
 Gets back 200 (Resource retrieved successfully)
 
 
@@ -20,31 +20,32 @@ TODO
 
 Musicbrainz
 =========
-base url is musicbrainz.org/ws/1/
-then add what you're looking for musicbrainz.org/ws/1/artist
-type=xml is necessary musicbrainz.org/ws/1/artist/?type=xml
+base url is musicbrainz.org/ws/1/  
+then add what you're looking for musicbrainz.org/ws/1/artist  
+type=xml is necessary musicbrainz.org/ws/1/artist/?type=xml  
 add artist name musicbrainz.org/ws/1/artist/?type=xml&name=jaco+pastorius
 
 
 Musicbrainz Options
 ===================
 
-Live Feed (pay for commerical use)
-Data snapshots (self hosted database)
-Web Service (returns XML)
+Live Feed (pay for commerical use)  
+Data snapshots (self hosted database)  
+Web Service (returns XML)  
 
 
 Using the Web Service
 ===========================
 
-baseurl/collection/?query
-OR
-baseurl/collection/MBID
+baseurl/collection/?query  
+OR  
+baseurl/collection/MBID  
 
 
 base url: musicbrainz.org/ws/1
 
 Collections:
+-------------
 * artist
 * release-group
 * release
