@@ -28,7 +28,7 @@ app.configure('production', function(){
 });
 
 function getArtist(artistName){
-thePath = '/ws/1/artist/?type=xml&name=jaco+pastorius';// . QueryString.stringify(artistName);
+thePath = "/ws/1/artist/?type=xml&name=jaco+pastorius";
 var options = {
   host: 'www.musicbrainz.org',
   port: 80,
@@ -39,6 +39,12 @@ console.log(options);
 
 http.get(options, function(res) {
   console.log("Got response: " + res.statusCode);
+	
+	res.on('data', function (chunk) {
+    console.log('XMLResponse: ' + chunk);
+  });
+
+  //console.log(res);
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
 });
