@@ -54,3 +54,6 @@ Collections:
 * tag
 * rating
 
+Queries are Collection Specific
+---------------
+***artist
